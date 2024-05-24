@@ -5,7 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>网页抽奖小工具</title>
 
-    <meta name="description" content="一个简单的在线抽奖系统, 可用于公司年会抽奖, 电视台抽奖等，可以自己设定抽奖名单、抽奖人数、每次出奖人数，有防止重复得奖的功能。">
     <meta name="keywords" content="">
     <meta name="baidu-tc-verification" content="3e8294dabe46e8def7d4b790be59d4cc">
 
@@ -448,12 +447,7 @@
                         show_current_step('活动说明');
 
                         var str = '<table align="center">';
-                        str += '<tr><th>奖项</th><th>数量</th><th>奖品</th></tr>\n';
-                        for (var i = game.prizes.length - 1; i >= 0; i--) {
-                            var p = game.prizes[i];
-                            str += '<tr><td>' + p.name + '</td><td>' + p.num + '</td><td>' + p.award + '</td></tr>\n';
-                        }
-                        str += '</table>';
+                        str += '图片为您本人，则上台自我介绍';
                         print_box(str);
                     }
 
